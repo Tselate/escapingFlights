@@ -17,7 +17,7 @@ db = SQLAlchemy(app)
 
 # Define the database model to store Flights data
 class Flights(db.Model):
-    datetime = db.Column(db.DateTime, primary_key=True, default=datetime.utcnow())
+    datetime = db.Column(db.DateTime, default=datetime.utcnow())
     prices = db.Column(db.Integer, nullable=False)
 
 
